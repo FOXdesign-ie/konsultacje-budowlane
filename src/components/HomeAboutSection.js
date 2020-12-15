@@ -91,6 +91,10 @@ const HomeAboutSection = () => {
 const StyledHomeAbout = styled.div`
     background-color: #282828;
     padding-bottom: 4em;
+    @media (max-width: 600px) {
+        padding-bottom: 2em;
+    }
+    
 `;
 
 const StyledHomeAboutImgHeader = styled.div`
@@ -99,14 +103,33 @@ const StyledHomeAboutImgHeader = styled.div`
         width: 100%;
         height: 40vh;
         object-fit: cover;
+        @media (max-width: 600px) {
+            height: 20vh;
+        }
     }
 `;
 
 const StyledHomeAboutHeader = styled.div`
     padding: 4em;
     width: 80%;
+    @media (max-width: 600px) {
+        padding: 1.5em 2em;
+        width: 100%;
+        text-align: center;
+    }
     h1 {
         margin-bottom: 1em;
+        @media (max-width: 600px) {
+            font-size: 5vw;
+            line-height: 1.5em;
+        }
+    }
+
+    P {
+        @media (max-width: 600px) {
+            font-size: 3vw;
+            line-height: 1.5em;
+        }
     }
 
 `;
@@ -116,9 +139,18 @@ const StyledHomeAboutIcons = styled.div`
     padding: 0 4rem;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 600px) {
+       flex-direction: column;
+       padding: 0 2rem;
+       width: 100%;
+       height: auto;
+    }
     img {
         width: 50%;
         object-fit: cover;
+        @media (max-width: 600px) {
+            width: 100%;
+        }
     }
     div {
         width: 45%;
@@ -128,23 +160,36 @@ const StyledHomeAboutIcons = styled.div`
         align-items: center;
         text-align: center;
         margin-top: -1em;
+        @media (max-width: 600px) {
+            width: 100%;
+            margin: 1.5em 0;
+        }
     }
 `;
 
 const IconContainer = styled.div`
-    /* width: 20vw; */
     height: 8vh;
     color: #717171;
+    @media (max-width: 600px) {
+           width: 35vw !important;
+        }
     p {
         display: inline-block;
         padding-top: 0.5em;
         width: 100%;
+        @media (max-width: 600px) {
+          font-size: 0.8em;
+     
+        }
     }
     svg {
         width: 100%;
         height: 100%;
         cursor: pointer;
         transition: 1s linear;
+        @media (max-width: 600px) {
+            height: 80%;
+        }
         &:hover {
             color: #fff;
         }

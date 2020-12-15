@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
    h1 {
         font-size: 3.8vw;
         line-height: 1.2em;
+        font-weight: 100;
     }
     h2 {
         font-size: 2vw;
@@ -42,6 +43,16 @@ const GlobalStyle = createGlobalStyle`
 
    button:hover {
       /* background: #717171; */
+   }
+
+   a {
+      color: #717171;
+      text-decoration: none;
+      transition: 1s linear;
+   }
+
+   a:hover {
+      color: #E5E5E5;
    }
 `;
 
