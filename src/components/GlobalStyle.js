@@ -10,7 +10,8 @@ const GlobalStyle = createGlobalStyle`
       background-color: #1B1B1B;
       color: #E5E5E5;
       font-family: 'Noto Serif', serif;
-      max-width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden;
    }
 
    h1 {
