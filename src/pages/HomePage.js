@@ -1,11 +1,11 @@
-import HomeWelcomeSection from '../components/HomeWelcomeSection';
+import HomeHeaderSection from '../components/HomeHeaderSection';
 import HomeAboutSection from '../components/HomeAboutSection';
 import HomeFaqSection from '../components/HomeFaqSection';
 
 const HomePage = () => {
     return (
         <div>
-            <HomeWelcomeSection />
+            <HomeHeaderSection />
             <HomeAboutSection />
             <HomeFaqSection />
         </div>

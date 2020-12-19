@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {StyledImgHeader} from '../styles';
 
 import imgHome from '../assets/img-home.jpg';
 import imgHome2 from '../assets/img2-home.jpg';
@@ -6,9 +7,9 @@ import imgHome2 from '../assets/img2-home.jpg';
 const HomeAboutSection = () => {
     return (
         <StyledHomeAbout>
-            <StyledHomeAboutImgHeader>
+            <StyledImgHeader>
                 <img src={imgHome} alt='img'/>
-            </StyledHomeAboutImgHeader>
+            </StyledImgHeader>
             <StyledHomeAboutHeader>
                 <h1>Czym sie zajmujemy?</h1>
                 <p>Budujemy, remontujemy i wykanczamy domy od 1986 roku. Stworzylismy i wyremontowalismy wiele budynkow m.in w Konstaninie-Jeziorna,  Magdalence, Piasecznie, Wilanowie, Warszawie, Zalesiu,  Gizycku, rejonie Warminsko-Mazurkim. </p>
@@ -87,25 +88,11 @@ const HomeAboutSection = () => {
     )
 };
 
-
 const StyledHomeAbout = styled.div`
     background-color: #282828;
     padding-bottom: 4em;
     @media (max-width: 600px) {
         padding-bottom: 2em;
-    }
-    
-`;
-
-const StyledHomeAboutImgHeader = styled.div`
-    width: 100vw;
-    img {
-        width: 100%;
-        height: 40vh;
-        object-fit: cover;
-        @media (max-width: 600px) {
-            height: 20vh;
-        }
     }
 `;
 
@@ -179,7 +166,6 @@ const IconContainer = styled.div`
         width: 100%;
         @media (max-width: 600px) {
           font-size: 0.8em;
-     
         }
     }
     svg {

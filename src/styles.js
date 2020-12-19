@@ -1,27 +1,6 @@
-import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
-// images
-import logoSVG from '../assets/logo.svg';
-
-
-const HomeWelcomeSection = () => {
-    return (
-        <StyledHomeWelcome>
-            <HomeWelcomeAnimation >
-                <img src={logoSVG} alt='logo' />
-            </HomeWelcomeAnimation>
-            <StyledHomeWelcomeHeader>
-                <h1>Ponad 30 lat doswiadczenia w branzy budowlanej</h1>
-                <h2>Charakteryzuje nas profesjonalizm, przywiazanie do detali oraz wieloletnie doswiaczenie.</h2>
-                <button><Link to="/contact">Kontakt</Link></button>
-            </StyledHomeWelcomeHeader>
-    
-        </StyledHomeWelcome>
-    )
-};
-
-const StyledHomeWelcome = styled.div`
+export const StyledHeader = styled.div`
     min-height: 85vh;
     position: relative;
     @media (max-width: 1100px) {
@@ -31,10 +10,9 @@ const StyledHomeWelcome = styled.div`
     @media (max-width: 600px) {
         min-height: auto;
     }
-  
 `;
 
-const HomeWelcomeAnimation = styled.div`
+export const StyledHeaderAnimation = styled.div`
     padding: 3em 0;
     width: 1100px;
     max-width: 75%;
@@ -47,7 +25,7 @@ const HomeWelcomeAnimation = styled.div`
     }
 `;
 
-const StyledHomeWelcomeHeader = styled.div`
+export const StyledHeaderDetails = styled.div`
     position: absolute;
     top: 5em;
     left: 45%;
@@ -76,11 +54,18 @@ const StyledHomeWelcomeHeader = styled.div`
             width: 50%;
             font-size: 3vw;
         }
- 
-    
-
-
     }
 `;
 
-export default HomeWelcomeSection;
+export const StyledImgHeader = styled.div`
+    width: 100vw;
+    img {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+        @media (max-width: 600px) {
+            height: 20vh;
+        }
+    }
+`;
+
