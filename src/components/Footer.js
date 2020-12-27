@@ -14,10 +14,14 @@ const StyledFooter = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
           font-size: 3vw;
           height: 10vw;
-        }
+    }
+    /* Landscape */
+    @media screen and (max-width: 770px) and (orientation: landscape) {
+            font-size: 1.5vw;
+    }
 `;
 
 export default Footer;

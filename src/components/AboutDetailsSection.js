@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import {StyledImgHeader} from '../styles';
+import {motion} from 'framer-motion';
+import {imgAnimation} from '../animations';
 
 // images
 import imgAbout from '../assets/img-about.jpg';
@@ -7,17 +9,20 @@ import imgAbout2 from '../assets/img2-about.jpg';
 import imgAbout3 from '../assets/img3-about.jpg';
 import imgAbout4 from '../assets/img4-about.jpg';
 
+
+
 const AboutDetailsSection = () => {
+ 
     return (
         <div>
             <StyledImgHeader>
-                <img src={imgAbout} alt='img'/>
+                <motion.img variants={imgAnimation} src={imgAbout} alt='img'/>
             </StyledImgHeader>
             <StyledAboutDetails>
                 <div className='text'>
-                    <p>To u naszego ojca zdobywalismy nasze pierwsze doswiaczenie w branzy budowlanej. Po koniec lat osiedemdziesiatych kazdy z braci powstanowil zalozyc wlasne firmy remontowo-budowlane, wspolpracujac ze soba do dzis. 
+                    <p>To u naszego ojca zdobywaliśmy nasze pierwsze doświaczenie w branży budowlanej. Pod koniec lat osiedemdziesiątych każdy z braci postanowił założyć własne firmy remontowo-budowlane, współpracując ze sobą do dziś. 
                     <br/><br/>
-                    Na poczatku zajmowalismy sie budowa domow jednorodzinnych a  takze remontami powojennych budynkow, glownie na terenie wojewodztwa Warminsko-Mazurskiego. W pierwszej polowie lat dziewiedzciesiatych obszar dzialania naszych firm rozszerzylismy na teram wojewodztwa Mazowieckiego, skupiajc sie glownie na pracy w Warszawie i jej okolicach.
+                    Na początku zajmowaliśmy się budową domów jednorodzinnych, a także remontami powojennych budynków, głównie na terenie województwa Warmińsko-Mazurskiego. W pierwszej połowie lat dziewięćdziesiątych obszar działania naszych firm rozszerzyliśmy na teren województwa Mazowieckiego, skupiając się głównie na pracy w Warszawie i jej okolicach.
                     </p>
                 </div>
                 <div className='img'>
@@ -29,12 +34,12 @@ const AboutDetailsSection = () => {
                     <img src={imgAbout3} alt='img'/>
                 </div>
                 <div className='text'>
-                    <p>Bylismy odpowiedzialni za budowe kilkustet Willi i rezydencji na terenie Warszawy, Konstancina, Magdalenki, Piaseczna, Zalesia czy Wilanowa. Mamy doswiadcznie w stawianiu posiadlosci prywatnych o powierzchni powyzej 1000m2,  remontow przedswojennych wilii, wykonczenia aparatamentow o wysokim standardzie, hotelu na Mazurach, osiedli domkow jednorodzinnych pod Gizyckiem i wiele, wiele innych.</p>
+                    <p>Byliśmy odpowiedzialni za budowę kilkustet Willi i rezydencji na terenie Warszawy, Konstancina, Magdalenki, Piaseczna, Zalesia czy Wilanowa. Mamy doświadcznie w stawianiu posiadłości prywatnych o powierzchni powyżej 1000m2, remontów przedwojennych wilii, wykończenia aparatamentów o wysokim standardzie, hotelu na Mazurach, osiedli domków jednorodzinnych pod Giżyckiem i wiele, wiele innych.</p>
                 </div>
             </StyledAboutDetails2>
             <StyledAboutDetails3>
                 <div className='text'>
-                    <p>Skupiamy sie na takze na konsultacjach, poradach i zarzadzaniu projektami. Podpowiadamy rozwiazania,  wspolpracujemy z biurami projektowymi, proponujemy technologie wykonania, ktore pozytywnie wplyna na srodowisko naturalne.  
+                    <p>Skupiamy się również na konsultacjach, poradach i zarządzaniu projektami. Podpowiadamy rozwiązania, współpracujemy z biurami projektowymi, proponujemy technologie wykonania, które pozytywnie wpływają na środowisko naturalne.  
                     <br/><br/>
                     Ryszard i Bogdan Bukowscy</p>
                 </div>
@@ -78,8 +83,9 @@ const StyledAboutDetails = styled.div`
         flex-direction: column;
         p {
             font-size: 3vw;
-            line-height: 1.5em;
+            /* line-height: 1.5em; */
             padding: 1em 0;
+            text-align: center;
         }
     }
 `;

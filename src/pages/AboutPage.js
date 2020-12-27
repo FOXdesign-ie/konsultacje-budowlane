@@ -1,12 +1,19 @@
 import AboutHeaderSection from '../components/AboutHeaderSection';
 import AboutDetailsSection from '../components/AboutDetailsSection';
 
+import {motion} from 'framer-motion';
+import {pageAnimation} from '../animations';
+
 const  AboutPage = () => {
     return (
-        <div>
+        <motion.div    
+            exit="exit"
+            variants={pageAnimation}
+            initial= "hidden"
+            animate= "show" >
             <AboutHeaderSection/>
             <AboutDetailsSection />
-        </div>
+        </motion.div>
     )
 };
 

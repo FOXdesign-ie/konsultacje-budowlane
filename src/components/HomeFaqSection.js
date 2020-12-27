@@ -1,14 +1,45 @@
 import styled from 'styled-components';
+import {AnimateSharedLayout} from 'framer-motion';
+import {motion} from 'framer-motion';
+
+import {fade} from  '../animations';
+
+import ToggleFAQ from './ToggleFAQ';
 
 const HomeFaqSection = () => {
     return (
         <StyledHomeFaq>
-            <h1>Pytania?</h1>
+            <motion.h1 variants={fade}>Pytania?</motion.h1>
             <div>
-                <p>Krok po kroku, co potrzeba, aby zbudowac dom?</p>
-                <p>Jakie sa koszty zwiazane z budowa domu?</p>
-                <p>Kiedy rozpoczac budowe domu?</p>
-                <p>Jak dlugo trwa remont/budowa domu?</p>
+                <AnimateSharedLayout>
+                    <ToggleFAQ title='Krok po kroku, co potrzeba, aby zbudować dom?'>
+                        <div className='answer'>
+                            <p>lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>    
+                        </div>
+                    </ToggleFAQ>
+
+                    <ToggleFAQ title='Jakie są koszty związane z budową domu?'>
+                        <div className='answer'>
+                            <p>lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>    
+                        </div>
+                    </ToggleFAQ>
+
+                    <ToggleFAQ title='Kiedy rozpocząć budowę domu?'>
+                        <div className='answer'>
+                            <p>lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>    
+                        </div>
+                    </ToggleFAQ>
+
+                    <ToggleFAQ title='Jak długo trwa remont/budowa domu?'>
+                        <div className='answer'>
+                            <p>lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>    
+                        </div>
+                    </ToggleFAQ>
+                </AnimateSharedLayout>
             </div>
         </StyledHomeFaq>
     )
@@ -17,10 +48,15 @@ const HomeFaqSection = () => {
 const StyledHomeFaq = styled.div`
     min-height: 80vh;
     padding: 4em;
+    width: 100%;
     @media (max-width: 600px) {
         padding: 2em;
         text-align: center;
-        }
+    }
+    /* Landscape */
+    @media screen and (max-width: 770px) and (orientation: landscape) {
+        padding: 2em 4em;
+    }
     h1 {
         margin-bottom: 1em;
         @media (max-width: 600px) {
@@ -29,21 +65,34 @@ const StyledHomeFaq = styled.div`
         }
     }
     div {
-        height: 60vh;
-        width: 50%;
+        min-height: 13vh;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         @media (max-width: 600px) {
             width: 100%;
-            height: 55vh;
+            min-height: 10vh;
         }
-        p {
-            border-bottom: 1px solid #282828;
-            padding: 1em 0;
+        .answer {
+            p {
+            color: #7f6921;
             @media (max-width: 600px) {
-                font-size: 3.5vw;
+                font-size: 1vw;
             } 
+            }
+        }
+    
+        .question {
+            cursor: pointer;
+            border-bottom: 1px solid #7f6921;
+            padding: 2em 0;
+            @media (max-width: 600px) {
+               p {
+                font-size: 3vw;
+               } 
+            } 
+      
         }
     }
 `;

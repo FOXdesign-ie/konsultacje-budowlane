@@ -18,10 +18,13 @@ const GlobalStyle = createGlobalStyle`
         font-size: 3.8vw;
         line-height: 1.2em;
         font-weight: 100;
+        letter-spacing: 0.1em;
     }
     h2 {
         font-size: 2vw;
         line-height: 1.5em;
+        font-weight: 100;
+        letter-spacing: 0.08em;
     }
 
     p {
@@ -39,20 +42,26 @@ const GlobalStyle = createGlobalStyle`
       letter-spacing: 0.05em;
       font-family: 'Noto Serif', serif;
       cursor: pointer;
+      transition: 1s linear;
    }
 
    button:hover {
-      /* background: #717171; */
+      border: 1px solid #7f6921;
    }
 
    a {
       color: #717171;
       text-decoration: none;
       transition: 1s linear;
-   }
-
-   a:hover {
-      color: #E5E5E5;
+      &:hover {
+         color: #7f6921;
+      }
+      &:focus{
+         color: #7f6921;
+      }
+      &:active{
+         color: #7f6921;
+      }
    }
 `;
 

@@ -12,7 +12,7 @@ const AboutHeaderSection= () => {
             </StyledHeaderAnimation>
             <StyledHeaderDetailsNoFlex>
                 <h1>Nasza historia</h1>
-                <p>Jestesmy trzecim pokoleniem zajmujacym sie budownictwem. Nasz dziadek byl przedwojennym majstrem budowlanym. Po wojnie byl odpowiedzialny za odbudowe naszego rodzinnego miasteczka na Mazurach. W tym okresie doswiadczenie zaczal zdobywac nasz ojciec, ktory w 1964 roku otworzyl wlasna firme budowlana.</p>
+                <p>Jesteśmy trzecim pokoleniem zajmującym się budownictwem. Nasz dziadek był przedwojennym majstrem budowlanym. Po wojnie był odpowiedzialny za odbudowę naszego rodzinnego miasteczka na Mazurach. W tym okresie doświadczenie zaczął zdobywać nasz ojciec, który w 1964 roku otworzył własną firmę budowlaną.</p>
             </StyledHeaderDetailsNoFlex>
         </StyledHeader>
     )
