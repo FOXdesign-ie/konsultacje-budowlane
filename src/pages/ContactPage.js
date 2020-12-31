@@ -3,7 +3,7 @@ import {StyledHeader, StyledHeaderAnimation, StyledHeaderDetails, StyledImgHeade
 
 
 import {motion} from 'framer-motion';
-import {pageAnimation, imgAnimation} from '../animations';
+import {pageAnimation, imgAnimation, titleAnimation} from '../animations';
 
 // images
 import logoSVG from '../assets/logo.svg';
@@ -24,35 +24,33 @@ const ContactPage = () => {
                     <img src={logoSVG} alt='logo' />
                 </StyledHeaderAnimation>
                 <StyledContactHeaderDetails>
-                    <h1>Skontaktuj się z nami</h1>
+                    <motion.h1 variants={titleAnimation}>Skontaktuj się z nami</motion.h1>
                 <StyledContact>
-                    <div className='icon email-icon'>
+                    <motion.div variants={titleAnimation} className='icon email-icon'>
                         <img src={email} alt='email-logo'/>
-                    </div>
-                    <div className='contact-details'>
+                    </motion.div>
+                    <motion.div variants={titleAnimation} className='contact-details'>
                         <p>Wyślij wiadomość</p>
                         <p><a href = "mailto: kontakt@konsultacje.pl">kontakt@konsultacje.pl</a></p>
-                    </div>
-                        
+                    </motion.div>
                 </StyledContact>
                 <StyledContact>
-                    <div className='icon'>
+                    <motion.div variants={titleAnimation} className='icon'>
                         <img src={mobile} alt='mobile-logo'/>
-                    </div>
-                        <div className='contact-details'>
-                            <p>Zadźwoń do nas</p>
-                            <p><a href="tel:+48555555555">+48555555555</a>
-                            </p>
-                    </div>
+                    </motion.div>
+                    <motion.div variants={titleAnimation} className='contact-details'>
+                        <p>Zadźwoń do nas</p>
+                        <p><a href="tel:+48-505-875-891">+48-505-875-891</a></p>
+                    </motion.div>
                 </StyledContact>
                 <StyledContact>
-                <div className='icon'>
-                    <img src={location} alt='location-logo'/>
-                </div>
-                    <div className='contact-details'>
+                    <motion.div variants={titleAnimation} className='icon'>
+                        <img src={location} alt='location-logo'/>
+                    </motion.div>
+                    <motion.div variants={titleAnimation} className='contact-details'>
                         <p>Spotkajmy się:</p>
                         <p>Warszawa, Giżycko</p>
-                    </div>
+                    </motion.div>
                 </StyledContact>
                 </StyledContactHeaderDetails>
                 <StyledImgHeaderMobile>

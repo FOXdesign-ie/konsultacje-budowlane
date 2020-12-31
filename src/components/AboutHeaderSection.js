@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {StyledHeader, StyledHeaderAnimation, StyledHeaderDetails} from '../styles';
-
+import {motion} from 'framer-motion';
+import {titleAnimation} from '../animations';
 // images
 import logoSVG from '../assets/logo.svg';
 
@@ -11,8 +12,8 @@ const AboutHeaderSection= () => {
                 <img src={logoSVG} alt='logo' />
             </StyledHeaderAnimation>
             <StyledHeaderDetailsNoFlex>
-                <h1>Nasza historia</h1>
-                <p>Jesteśmy trzecim pokoleniem zajmującym się budownictwem. Nasz dziadek był przedwojennym majstrem budowlanym. Po wojnie był odpowiedzialny za odbudowę naszego rodzinnego miasteczka na Mazurach. W tym okresie doświadczenie zaczął zdobywać nasz ojciec, który w 1964 roku otworzył własną firmę budowlaną.</p>
+                <motion.h1 variants={titleAnimation}>Nasza historia</motion.h1>
+                <motion.p variants={titleAnimation}>Jesteśmy trzecim pokoleniem zajmującym się budownictwem. Nasz dziadek był przedwojennym majstrem budowlanym. Po wojnie był odpowiedzialny za odbudowę naszego rodzinnego miasteczka na Mazurach. W tym okresie doświadczenie zaczął zdobywać nasz ojciec, który w 1964 roku otworzył własną firmę budowlaną.</motion.p>
             </StyledHeaderDetailsNoFlex>
         </StyledHeader>
     )
