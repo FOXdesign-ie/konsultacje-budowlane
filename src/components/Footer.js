@@ -14,7 +14,7 @@ const StyledFooter = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
           font-size: 3vw;
           height: 10vw;
     }

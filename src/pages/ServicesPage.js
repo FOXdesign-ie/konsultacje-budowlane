@@ -142,7 +142,7 @@ const StyledServiceSvg = styled.div`
         }
     }
    
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait) {
         height: 2em;
         width: 100%;
         margin: 0 auto;
@@ -156,7 +156,6 @@ const StyledServiceSvg = styled.div`
     }
 `;
 
-
 const StyledImgHeaderMobile = styled(StyledImgHeader)`
     display: none;
     img {
@@ -165,10 +164,9 @@ const StyledImgHeaderMobile = styled(StyledImgHeader)`
         object-fit: cover;
     }
     
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait) {
         overflow: hidden;
         display: inline-block;
-        /* padding-bottom: 1em; */
     }
 `
 export default ServicesPage;

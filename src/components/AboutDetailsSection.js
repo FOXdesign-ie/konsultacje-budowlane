@@ -77,13 +77,12 @@ const StyledAboutDetails = styled.div`
             object-fit: cover;
         }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait) {
         padding: 2em;
         display: flex;
         flex-direction: column;
         p {
             font-size: 3vw;
-            /* line-height: 1.5em; */
             padding: 1em 0;
             text-align: center;
         }

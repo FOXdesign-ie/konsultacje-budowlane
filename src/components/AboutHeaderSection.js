@@ -27,7 +27,7 @@ const StyledHeaderDetailsNoFlex = styled(StyledHeaderDetails)`
         line-height: 2em;
         letter-spacing: 0.07em;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait) {
         h1 {
             margin-bottom: 1.2em;
         }

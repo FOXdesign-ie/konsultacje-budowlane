@@ -61,7 +61,6 @@ const ServiceDetails = () => {
     )
 };
 
-
 const StyledServiceDetails = styled.div`
     color: #fff;
 `;
@@ -71,7 +70,7 @@ const StyledServiceHeader = styled.div`
     padding-top: 20vh;
     position: relative;
     overflow: hidden;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait){
         text-align: center;
         position: inline-block;
         min-height: 20vh;
@@ -106,7 +105,7 @@ const StyledServiceHeader = styled.div`
         height: 70vh;
         object-fit: cover;
         margin: 1.5em 0;
-        @media (max-width: 600px) {
+        @media (max-width: 800px) and (orientation: portrait) {
             height: 20vh;
         }
     }
@@ -119,7 +118,7 @@ const StyledServiceDescriptions = styled.div`
         display: block;
         margin: 2rem 2rem;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait) {
         min-height: 10vh;
         margin: 0em;
     }
@@ -137,7 +136,7 @@ const StyledDescription = styled.div`
            font-size: 2vh;
         }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait) {
         padding: 1em 2em;
     }
     @media screen and (max-width: 770px) and (orientation: landscape) {
@@ -158,7 +157,7 @@ const StyledDescription = styled.div`
     }
     p {
         padding: 1rem 0rem;
-        @media (max-width: 600px) {
+        @media (max-width: 800px) and (orientation: portrait) {
            font-size: 1.5vh;
         }
         @media screen and (max-width: 770px) and (orientation: landscape) {
@@ -167,18 +166,17 @@ const StyledDescription = styled.div`
     }
 `;
 
-
 const StyledImageDisplay = styled.div`
     min-height: 40vh;
     overflow: hidden;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait) {
         min-height: 20vh;
         }
     img {
         width: 100%;
         height: 80vh;
         object-fit: cover;
-        @media (max-width: 600px) {
+        @media (max-width: 800px) and (orientation: portrait) {
             height: 20vh;
         }
     }

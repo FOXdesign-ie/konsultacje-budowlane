@@ -77,8 +77,8 @@ const StyledNav = styled.nav`
 const StyledNavLogo = styled.div`
      img {
         width: 12vw;
-        @media (max-width: 600px) {
-        width: 22vw;
+        @media (max-width: 800px) and (orientation: portrait) {
+            width: 22vw;
         }
      }
 `;
@@ -87,6 +87,11 @@ const StyledNavMenu = styled.div`
     width: 55%;
     font-size: 1.4vw;
     color: #717171;
+    @media (min-width: 650px) and (max-width: 800px) and (orientation: portrait) {
+        width: 65%; 
+        padding: 1em 0;
+        font-size: 2vw;
+    }
     @media (max-width: 600px) {
         padding: 0.5em 0;
         width: 85%;

@@ -87,7 +87,6 @@ const StyledContact = styled.div`
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    
     .icon {
         height: 3em;
         img {
@@ -118,13 +117,9 @@ const StyledContact = styled.div`
         }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait) {
         height: 10%;
         display: flex;
-        /* justify-content: space-between;
-        align-items: center;
-        text-align: center; */
-
         .icon {
             width: 30%;
             display: flex;
@@ -139,7 +134,6 @@ const StyledContact = styled.div`
             img {
                 height: 2vh;
             }
-            
         }
         .contact-details p  {
             font-size: 3vw;

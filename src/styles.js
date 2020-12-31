@@ -6,7 +6,8 @@ export const StyledHeader = styled.div`
     @media (max-width: 1100px) {
         min-height: 65vh;
     }
-    @media (max-width: 600px) {
+
+    @media (max-width: 800px) and (orientation: portrait) {
         min-height: auto;
     }
 `;
@@ -15,7 +16,7 @@ export const StyledHeaderAnimation = styled.div`
     padding: 3em 0;
     width: 1100px;
     max-width: 75%;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait) {
         max-width: 95%;
         padding: 2em 0;
     }
@@ -34,7 +35,7 @@ export const StyledHeaderDetails = styled.div`
     flex-direction: column;
     justify-content: space-between;  
     /* align-items: center; */
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait) {
         text-align: center;
         width: 80%;
         min-height: 75%;
@@ -72,7 +73,7 @@ export const StyledImgHeader = styled.div`
         width: 100%;
         height: 40vh;
         object-fit: cover;
-        @media (max-width: 600px) {
+        @media (max-width: 800px) and (orientation: portrait) {
             height: 20vh;
         }
     }

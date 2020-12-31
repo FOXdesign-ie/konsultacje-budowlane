@@ -58,7 +58,7 @@ const StyledHomeFaq = styled.div`
     min-height: 80vh;
     padding: 4em;
     width: 100%;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait) {
         padding: 2em;
         text-align: center;
     }
@@ -68,7 +68,7 @@ const StyledHomeFaq = styled.div`
     }
     h1 {
         margin-bottom: 1em;
-        @media (max-width: 600px) {
+        @media (max-width: 800px) and (orientation: portrait) {
             font-size: 5vw;
             margin-bottom: 2em;
         }
@@ -79,14 +79,14 @@ const StyledHomeFaq = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        @media (max-width: 600px) {
+        @media (max-width: 800px) and (orientation: portrait) {
             width: 100%;
             min-height: 10vh;
         }
         .answer {
             p {
             color: #7f6921;
-            @media (max-width: 600px) {
+            @media (max-width: 800px) and (orientation: portrait) {
                 font-size: 1vw;
             } 
             }
@@ -96,12 +96,11 @@ const StyledHomeFaq = styled.div`
             cursor: pointer;
             border-bottom: 1px solid #7f6921;
             padding: 2em 0;
-            @media (max-width: 600px) {
+            @media (max-width: 800px) and (orientation: portrait) {
                p {
                 font-size: 3vw;
                } 
             } 
-      
         }
     }
 `;

@@ -102,7 +102,7 @@ const HomeAboutSection = () => {
 const StyledHomeAbout = styled.div`
     background-color: #282828;
     padding-bottom: 4em;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait) {
         padding-bottom: 0em;
     }
 `;
@@ -110,7 +110,7 @@ const StyledHomeAbout = styled.div`
 const StyledHomeAboutHeader = styled.div`
     padding: 4em;
     width: 80%;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) and (orientation: portrait) {
         padding: 1.5em 2em;
         width: 100%;
         text-align: center;
@@ -121,13 +121,13 @@ const StyledHomeAboutHeader = styled.div`
     }
     h1 {
         margin-bottom: 1em;
-        @media (max-width: 600px) {
+        @media (max-width: 800px) and (orientation: portrait) {
             font-size: 5vw;
             line-height: 1.5em;
         }
     }
     P {
-        @media (max-width: 600px) {
+        @media (max-width: 800px) and (orientation: portrait) {
             font-size: 3vw;
             line-height: 1.5em;
         }
@@ -184,7 +184,7 @@ const IconContainer = styled.div`
         padding-top: 0.5em;
         width: 100%;
         transition: 1s linear;
-        @media (max-width: 600px) {
+        @media (max-width: 800px) and (orientation: portrait) {
           font-size: 0.8em;
         }
     }
@@ -193,7 +193,7 @@ const IconContainer = styled.div`
         height: 100%;
         cursor: pointer;
         transition: 1s linear;
-        @media (max-width: 600px) {
+        @media (max-width: 800px) and (orientation: portrait) {
             height: 70%;
         }
         &:hover {
