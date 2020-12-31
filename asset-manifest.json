@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.js": "/konsultacje-budowlane/static/js/main.8f9a045d.chunk.js",
+    "main.js.map": "/konsultacje-budowlane/static/js/main.8f9a045d.chunk.js.map",
+    "runtime-main.js": "/konsultacje-budowlane/static/js/runtime-main.0fa289a5.js",
+    "runtime-main.js.map": "/konsultacje-budowlane/static/js/runtime-main.0fa289a5.js.map",
+    "static/js/2.3759c2c4.chunk.js": "/konsultacje-budowlane/static/js/2.3759c2c4.chunk.js",
+    "static/js/2.3759c2c4.chunk.js.map": "/konsultacje-budowlane/static/js/2.3759c2c4.chunk.js.map",
+    "index.html": "/konsultacje-budowlane/index.html",
+    "static/js/2.3759c2c4.chunk.js.LICENSE.txt": "/konsultacje-budowlane/static/js/2.3759c2c4.chunk.js.LICENSE.txt",
+    "static/media/budownictwo.14f4e8c8.jpg": "/konsultacje-budowlane/static/media/budownictwo.14f4e8c8.jpg",
+    "static/media/budownictwo2.788e4f5e.jpg": "/konsultacje-budowlane/static/media/budownictwo2.788e4f5e.jpg",
+    "static/media/img-about.9e2556d8.jpg": "/konsultacje-budowlane/static/media/img-about.9e2556d8.jpg",
+    "static/media/img-contact.ef529996.jpg": "/konsultacje-budowlane/static/media/img-contact.ef529996.jpg",
+    "static/media/img-home.e235c582.jpg": "/konsultacje-budowlane/static/media/img-home.e235c582.jpg",
+    "static/media/img-uslugi.c0962272.jpg": "/konsultacje-budowlane/static/media/img-uslugi.c0962272.jpg",
+    "static/media/img2-about.1d6d2bbe.jpg": "/konsultacje-budowlane/static/media/img2-about.1d6d2bbe.jpg",
+    "static/media/img2-home.c301000d.jpg": "/konsultacje-budowlane/static/media/img2-home.c301000d.jpg",
+    "static/media/img3-about.dbe64ed5.jpg": "/konsultacje-budowlane/static/media/img3-about.dbe64ed5.jpg",
+    "static/media/img4-about.1a1f9540.jpg": "/konsultacje-budowlane/static/media/img4-about.1a1f9540.jpg",
+    "static/media/konsultacje.e76b22a8.jpg": "/konsultacje-budowlane/static/media/konsultacje.e76b22a8.jpg",
+    "static/media/konsultacje2.fabfe6ad.jpg": "/konsultacje-budowlane/static/media/konsultacje2.fabfe6ad.jpg",
+    "static/media/logo.17b0ea39.svg": "/konsultacje-budowlane/static/media/logo.17b0ea39.svg",
+    "static/media/remonty.359b7b27.jpg": "/konsultacje-budowlane/static/media/remonty.359b7b27.jpg",
+    "static/media/remonty2.ef529996.jpg": "/konsultacje-budowlane/static/media/remonty2.ef529996.jpg",
+    "static/media/wykonczenia.f24392d4.jpg": "/konsultacje-budowlane/static/media/wykonczenia.f24392d4.jpg",
+    "static/media/wykonczenia2.0d2ae663.jpg": "/konsultacje-budowlane/static/media/wykonczenia2.0d2ae663.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0fa289a5.js",
+    "static/js/2.3759c2c4.chunk.js",
+    "static/js/main.8f9a045d.chunk.js"
+  ]
+}
