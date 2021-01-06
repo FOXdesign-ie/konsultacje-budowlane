@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import {StyledHeader, StyledHeaderAnimation, StyledHeaderDetails, StyledImgHeader} from '../styles';
-
-
 import {motion} from 'framer-motion';
 import {pageAnimation, imgAnimation, titleAnimation} from '../animations';
 
