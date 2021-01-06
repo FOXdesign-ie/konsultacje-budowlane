@@ -110,10 +110,9 @@ const ServicesPage = () => {
     )
 };
 
-
 const StyledContactHeader = styled(StyledHeader)`
     @media (max-width: 600px) {
-        height: 42vh;
+        /* height: 42vh; */
     }
 `;
 

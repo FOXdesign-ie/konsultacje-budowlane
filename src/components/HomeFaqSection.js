@@ -55,11 +55,11 @@ const HomeFaqSection = () => {
 };
 
 const StyledHomeFaq = styled.div`
-    min-height: 80vh;
-    padding: 4em;
+    /* min-height: 80vh; */
+    padding: 4em 4em 6em 4em;
     width: 100%;
     @media (max-width: 800px) and (orientation: portrait) {
-        padding: 2em;
+        padding: 2em 2em 4em 2em;
         text-align: center;
     }
     /* Landscape */
@@ -70,7 +70,6 @@ const StyledHomeFaq = styled.div`
         margin-bottom: 1em;
         @media (max-width: 800px) and (orientation: portrait) {
             font-size: 5vw;
-            margin-bottom: 2em;
         }
     }
     div {
@@ -83,19 +82,17 @@ const StyledHomeFaq = styled.div`
             width: 100%;
             min-height: 10vh;
         }
-        .answer {
-            p {
+        .answer p {
             color: #7f6921;
             @media (max-width: 800px) and (orientation: portrait) {
                 font-size: 1vw;
             } 
-            }
+          
         }
-    
         .question {
             cursor: pointer;
             border-bottom: 1px solid #7f6921;
-            padding: 2em 0;
+            padding: 1em 0;
             @media (max-width: 800px) and (orientation: portrait) {
                p {
                 font-size: 3vw;
