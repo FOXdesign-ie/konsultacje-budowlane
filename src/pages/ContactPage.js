@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import {StyledHeader, StyledHeaderAnimation, StyledHeaderDetails, StyledImgHeader} from '../styles';
-
-
 import {motion} from 'framer-motion';
 import {pageAnimation, imgAnimation, titleAnimation} from '../animations';
 
@@ -31,7 +29,7 @@ const ContactPage = () => {
                     </motion.div>
                     <motion.div variants={titleAnimation} className='contact-details'>
                         <p>Wyślij wiadomość</p>
-                        <p><a href = "mailto: kontakt@konsultacje.pl">kontakt@konsultacje.pl</a></p>
+                        <p><a href = "mailto: kontakt@konsultacje-budowlane.pl">kontakt@konsultacje-budowlane.pl</a></p>
                     </motion.div>
                 </StyledContact>
                 <StyledContact>
@@ -63,7 +61,7 @@ const ContactPage = () => {
 
 const StyledContactHeader = styled(StyledHeader)`
     @media (max-width: 600px) {
-        min-height: 78vh;
+        height: 80vh;
     }
 `;
 
@@ -74,7 +72,7 @@ const StyledContactHeaderDetails = styled(StyledHeaderDetails)`
     }
 
     @media (max-width: 600px) {
-        min-height: 35vh;
+        min-height: 30vh;
     }
 `;
 
@@ -144,7 +142,7 @@ const StyledContact = styled.div`
 const StyledImgHeaderMobile = styled(StyledImgHeader)`
     display: none;
     img {
-        height: 30vh;
+        height: 37vh;
     }
     
     @media (max-width: 600px) {

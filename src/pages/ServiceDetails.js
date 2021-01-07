@@ -158,10 +158,12 @@ const StyledDescription = styled.div`
     p {
         padding: 1rem 0rem;
         @media (max-width: 800px) and (orientation: portrait) {
-           font-size: 1.5vh;
+            font-size: 3.3vw;
+            line-height: 2em;
         }
         @media screen and (max-width: 770px) and (orientation: landscape) {
             font-size: 4vh;
+            
         }
     }
 `;

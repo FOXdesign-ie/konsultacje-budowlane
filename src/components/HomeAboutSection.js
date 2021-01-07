@@ -129,7 +129,7 @@ const StyledHomeAboutHeader = styled.div`
     P {
         @media (max-width: 800px) and (orientation: portrait) {
             font-size: 3vw;
-            line-height: 1.5em;
+            line-height: 2em;
         }
     }
 `;

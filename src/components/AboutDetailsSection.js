@@ -9,10 +9,7 @@ import imgAbout2 from '../assets/img2-about.jpg';
 import imgAbout3 from '../assets/img3-about.jpg';
 import imgAbout4 from '../assets/img4-about.jpg';
 
-
-
 const AboutDetailsSection = () => {
- 
     return (
         <div>
             <StyledImgHeader>
@@ -51,7 +48,6 @@ const AboutDetailsSection = () => {
     )
 };
 
-
 const StyledAboutDetails = styled.div`
     padding: 5em;
     display: flex;
@@ -66,6 +62,9 @@ const StyledAboutDetails = styled.div`
         p {
             line-height: 2em;
             letter-spacing: 0.07em;
+            @media (max-width: 800px) and (orientation: portrait) {
+                line-height: 2em;
+            }
         }
     }
     .img {

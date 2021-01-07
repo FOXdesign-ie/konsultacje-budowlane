@@ -28,7 +28,7 @@ export const titleAnimation = {
     show: {
         y: 0,
         opacity: 1,
-        transition: {duration: 1.2, ease: 'easeOut'}
+        transition: {duration: 1, ease: 'easeOut'}
     }
 };
 
